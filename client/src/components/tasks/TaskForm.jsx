@@ -29,11 +29,11 @@ export default function TaskForm({ onSubmit, onCancel, teamMembers, projects }) 
     <form onSubmit={handleSubmit}>
       <div className="form-group">
         <label>Title</label>
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Task title" required />
+        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter task title" required />
       </div>
       <div className="form-group">
         <label>Description</label>
-        <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Optional description" rows={2} />
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Add details or context" rows={2} />
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-4)' }}>
         <div className="form-group">
